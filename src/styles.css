@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar {
+  width: 350px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.month-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.month-dropdown,
+.year-dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.month-dropdown label {
+  margin-right: 10px;
+}
+
+.year-dropdown label {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.month-dropdown select,
+.year-dropdown select {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.days span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.current-date {
+  background-color: green; /* Apply green color to the current date */
+}
+
+.selected-date {
+  background-color: green; /* Apply green color to the selected date */
+}
+
+.days span:hover {
+  background-color: #f2f2f2;
+}
+
+/* Add specific styling for the current day */
+.days .current-day {
+  background-color: #007bff;
+  color: #fff;
+}
+.date-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.date-input label {
+  margin-right: 10px;
+}
+
+.date-input input[type="text"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.date-input button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

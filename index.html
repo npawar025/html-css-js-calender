@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Month Calendar</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="calendar">
+      <div class="month-header">
+        <h2 id="monthYear"></h2>
+      </div>
+      <div class="month-dropdown">
+        <label for="monthSelect">Select Month: </label>
+        <select id="monthSelect"></select>
+      </div>
+      <div class="year-dropdown">
+        <label for="yearSelect">Select Year: </label>
+        <select id="yearSelect"></select>
+      </div>
+      <div class="day-names">
+        <span>Sun</span>
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
+      </div>
+      <div class="days" id="daysContainer">
+        <!-- Days of the month will be dynamically generated here -->
+      </div>
+      <div class="date-input">
+        <label for="dateInput">Enter Date: </label>
+        <input type="text" id="date-input" placeholder="dd/mm/yyyy" />
+        <button id="goto-btn">GO</button>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
