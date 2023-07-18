@@ -241,6 +241,8 @@ function handleGoButtonClick() {
 
   // If the input is not a valid number or is not within the range of valid dates, do nothing
   if (isNaN(inputDate) || inputDate < 1 || inputDate > 31) {
+    alert("INVALID DATE");
+    dateInput.value = "";
     return;
   }
 

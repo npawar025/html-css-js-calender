@@ -2,16 +2,22 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center; /* Center the calendar horizontally */
+  align-items: center; /* Center the calendar vertically */
+  height: 100vh; /* Set the body height to cover the entire viewport */
 }
 
 .calendar {
-  width: 350px;
-  margin: 20px auto;
+  width: 100%; /* Adjust the width to fit the available space */
+  max-width: 350px; /* Set a maximum width to prevent the calendar from becoming too wide */
+  margin: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
+
 .month-header {
   text-align: center;
   margin-bottom: 10px;
